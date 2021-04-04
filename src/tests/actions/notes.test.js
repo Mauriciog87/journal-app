@@ -100,7 +100,7 @@ describe('tests on notes', () => {
         expect(doc.data().title).toBe(note.title);
     });
 
-    test('startUploadin should update the entry`s url', async() => {
+    test('startUploading should update the entry`s url', async() => {
         const file = new File([], 'image.jpg');
         await store.dispatch(startUploading(file));
     })
